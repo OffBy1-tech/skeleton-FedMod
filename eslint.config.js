@@ -13,14 +13,12 @@ export default defineConfig([
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
-      tseslint.configs.recommended,
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
+      //tseslint.configs.recommendedTypeChecked,
+      // Stricter rules
       tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
+      // Stylistic rules
       tseslint.configs.stylisticTypeChecked,
 
       reactX.configs['recommended-typescript'],
